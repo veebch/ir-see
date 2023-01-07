@@ -16,6 +16,12 @@ This is intended to be a resource for making something that can give some pointe
 - Camera Module 3 (NoIR)
 - 720 nm Filter
 
+## Post processing 
+
+The 720 nm filter means that there will be some visible red light that leaks into the image. 
+
+- Red/Blue channel swap.
+
 ## Video
 
 ## Acknowledgements
