@@ -17,3 +17,7 @@ This is intended to be a resource for making something that can give some pointe
 - 720 nm Filter
 
 ## Video
+
+## Acknowledgements
+
+The motivation for dipping a toe into IR photography came from a chat with bj52 and others on #photogeeks on chat.libera.irc
