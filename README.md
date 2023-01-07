@@ -13,8 +13,8 @@ This is intended to be a resource for making something that can give some pointe
 ## Hardware
 
 - Raspberry Pi
-- Camera Module 3 (NoIR)
-- 720 nm Filter
+- Camera Module 3 (NoIR)        (12 Mp Sony IMX708 sensor)
+- 720 nm Filter                 (Blocks out most visible light)
 
 ## Post processing 
 
