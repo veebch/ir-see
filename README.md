@@ -4,9 +4,7 @@
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/v_e_e_b/)
 
 
-#  funfaIR
-
-> 'my friend lost his job as a rollercoaster operator... he's suing for funfair dismissal'
+#  IRSee
 
 Infrared (IR) photography with a Raspberry Pi NoIR Camera Module 3. 
 
