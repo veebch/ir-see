@@ -30,7 +30,7 @@ To run,
 
 ``` ./main.py```
 
-if you want to manually specify Exposure time, focus position or ISO, you can get details on those flags using
+if you want to manually specify exposure time, focus position or ISO sensitivity, you can get details on those flags using
 
 ```
 ./main.py -h
