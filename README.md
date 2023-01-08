@@ -30,7 +30,11 @@ To run,
 
 ``` ./main.py```
 
+if you want to manually specify Exposure time, focus position or ISO, you can get details on those flags using
 
+```
+./main.py -h
+```
 ## Post processing 
 
 The 720 nm filter means that there will be some visible red light that leaks into the image. 
