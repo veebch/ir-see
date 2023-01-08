@@ -19,11 +19,13 @@ This is intended to be a resource for making something that can give some pointe
 ## Installing
 
 Clone this repository and install dependencies using the commands
+
 ``` 
 cd ~
 git clone https://github.com/veebch/ir-see
 python3 -m pip install picamera2
 ```
+
 
 ## Running
 
