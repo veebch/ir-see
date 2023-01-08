@@ -15,13 +15,21 @@ This is intended to be a resource for making something that can give some pointe
 - Raspberry Pi
 - Camera Module 3 (NoIR)        (12 Mp Sony IMX708 sensor)
 - 720 nm Filter                 (Blocks out most visible light)
+## Installing
+
+Clone this repository and install dependencies using the commands
+``` 
+cd ~
+git clone https://github.com/veebch/irsee
+python3 -m pip install picamera2
+```
 
 ## Running
 
-The code uses autofocus and auto exposure unless told otherwise. To override these defaults, there are a couple of command line flags that you can use,
-for more details run
+To run, 
 
-``` ./main.py -h```
+``` ./main.py```
+
 
 ## Post processing 
 
