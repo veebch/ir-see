@@ -39,7 +39,7 @@ python3 main.py
 if you want to manually specify exposure time, focus position or ISO sensitivity, you can get details on those flags using
 
 ```
-./main.py -h
+python3 main.py -h
 ```
 ## Post processing 
 
