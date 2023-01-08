@@ -33,7 +33,7 @@ To run,
 
 ``` 
 cd ir-see
-./main.py
+python3 main.py
 ```
 
 if you want to manually specify exposure time, focus position or ISO sensitivity, you can get details on those flags using
