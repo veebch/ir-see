@@ -8,7 +8,7 @@
 
 Infrared (IR) photography with a Raspberry Pi NoIR Camera Module 3. 
 
-This is intended to be a resource for making something that can give some pointers for easily capturing infrared images using a digital sensor.
+This is intended to be a resource for making something that can give some pointers for easily capturing infrared images using a digital sensor. It would be easy to add a preview window, but for now, this is plenty.
  
 ## Hardware
 
