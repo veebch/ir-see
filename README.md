@@ -16,6 +16,13 @@ This is intended to be a resource for making something that can give some pointe
 - Camera Module 3 (NoIR)        (12 Mp Sony IMX708 sensor)
 - 720 nm Filter                 (Blocks out most visible light)
 
+## Running
+
+The code uses autofocus and auto exposure unless told otherwise. To override these defaults, there are a couple of command line flags that you can use,
+for more details run
+
+``` ./main.py -h```
+
 ## Post processing 
 
 The 720 nm filter means that there will be some visible red light that leaks into the image. 
