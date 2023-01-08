@@ -15,7 +15,7 @@ This is intended to be a resource for making something that can give some pointe
 - Raspberry Pi                  (Used a 4, but this is overkill) l
 - Camera Module 3 (NoIR)        (12 Mp Sony IMX708 sensor)
 - 720 nm Filter                 (Blocks out almost all visible light, opt for 850nm if you want no colour at all)
-- 
+
 ## Installing
 
 Clone this repository and install dependencies using the commands
