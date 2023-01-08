@@ -21,7 +21,7 @@ This is intended to be a resource for making something that can give some pointe
 Clone this repository and install dependencies using the commands
 ``` 
 cd ~
-git clone https://github.com/veebch/irsee
+git clone https://github.com/veebch/ir-see
 python3 -m pip install picamera2
 ```
 
@@ -29,7 +29,9 @@ python3 -m pip install picamera2
 
 To run, 
 
-``` ./main.py```
+``` 
+cd ir-see
+./main.py```
 
 if you want to manually specify exposure time, focus position or ISO sensitivity, you can get details on those flags using
 
