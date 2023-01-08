@@ -38,11 +38,14 @@ cd ir-see
 python3 main.py
 ```
 
-if you want to manually specify exposure time, focus position or ISO sensitivity, you can get details on those flags using
+Captures will be stored in the `./images` directory.
+
+If you want to manually specify exposure time, focus position or ISO sensitivity, you can get details on those flags using
 
 ```
 python3 main.py -h
 ```
+
 ## Post processing 
 
 The 720 nm filter means that there will be some visible red light that leaks into the image. 
