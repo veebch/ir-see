@@ -22,7 +22,7 @@ picam2 = Picamera2()
 camera_config = picam2.create_preview_configuration()
 capture_config = picam2.create_still_configuration(raw={}, display=None)
 picam2.configure(camera_config)
-picam2.start_preview(Preview.NULL)
+picam2.start_preview(Preview.QT)
 # Exposure time
 if args.exposure is not None:
     print("Exposure time in us:",args.exposure)
