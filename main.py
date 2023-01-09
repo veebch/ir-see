@@ -7,9 +7,9 @@ import os
 import argparse
 
 argParser = argparse.ArgumentParser()
-argParser.add_argument("-e", "--exposure", help="exposure time")
-argParser.add_argument("-f", "--focus", help="lens position as percentage")
-argParser.add_argument("-i", "--iso", help="iso sensitivity")
+argParser.add_argument("-e", "--exposure", type=int, help="exposure time")
+argParser.add_argument("-f", "--focus", type=float, help="lens position as percentage")
+argParser.add_argument("-i", "--iso", type=int, help="iso sensitivity")
 args = argParser.parse_args()
 
 
@@ -33,6 +33,7 @@ if args.iso is not None:
 
 # AfMode: Set the AF mode (manual, auto, continuous)
 # LensPosition: Manual focus, Set the lens position.
+# 0 is infinity, 10.0 is 10cm
 if args.focus is not None:
     picam2.set_controls({"AfMode": controls.AfModeEnum.Manual, "LensPosition": int(args.focus)})
 else:
