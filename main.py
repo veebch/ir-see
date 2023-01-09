@@ -7,8 +7,8 @@ import os
 import argparse
 
 argParser = argparse.ArgumentParser()
-argParser.add_argument("-e", "--exposure", type=int, help="exposure time")
-argParser.add_argument("-f", "--focus", type=float, help="lens position as percentage")
+argParser.add_argument("-e", "--exposure", type=int, help="exposure time (us)")
+argParser.add_argument("-f", "--focus", type=float, help="lens position (0 for infinity, 10 for 10cm)")
 argParser.add_argument("-i", "--iso", type=int, help="iso sensitivity")
 args = argParser.parse_args()
 
