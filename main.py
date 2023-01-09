@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 from picamera2 import Picamera2, Preview
+from libcamera import controls
+
 import time
 import os
 import argparse
@@ -32,7 +34,7 @@ if args.iso is not None:
 # AfMode: Set the AF mode (manual, auto, continuous)
 # LensPosition: Manual focus, Set the lens position.
 if args.focus is not None:
-    picam2.set_controls({"AfMode": 0, "LensPosition": int(args.focus)})
+    picam2.set_controls({"AfMode": controls.AfModeEnum.Manual, "LensPosition": int(args.focus)})
 else:
     print("Autofocus")
     picam2.set_controls({"AfMode": 1})
