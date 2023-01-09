@@ -25,7 +25,6 @@ Clone this repository and install dependencies using the commands
 ``` 
 cd ~
 git clone https://github.com/veebch/ir-see
-python3 -m pip install picamera2
 ```
 
 
