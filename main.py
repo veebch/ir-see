@@ -37,7 +37,7 @@ if args.focus is not None:
     picam2.set_controls({"AfMode": controls.AfModeEnum.Manual, "LensPosition": int(args.focus)})
 else:
     print("Autofocus")
-    picam2.set_controls({"AfMode": 1})
+    picam2.set_controls({"AfMode": controls.AfModeEnum.Auto})
 picam2.start()
 
 time.sleep(2)
