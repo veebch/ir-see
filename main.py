@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 from picamera2 import Picamera2, Preview
 from libcamera import controls
-
 import time
 import os
 import argparse
@@ -10,6 +9,7 @@ argParser = argparse.ArgumentParser()
 argParser.add_argument("-e", "--exposure", type=int, help="exposure time (us)")
 argParser.add_argument("-f", "--focus", type=float, help="lens position (0 for infinity, 10 for 10cm)")
 argParser.add_argument("-i", "--iso", type=int, help="iso sensitivity")
+argParser.add_argument("-p", "--preview", help="preview window", action='store_true')
 args = argParser.parse_args()
 
 
@@ -23,7 +23,10 @@ camera_config = picam2.create_preview_configuration()
 capture_config = picam2.create_still_configuration(raw={}, display=None)
 picam2.configure(camera_config)
 time.sleep(2)
-picam2.start_preview(Preview.QT)
+if args.preview is True:
+    picam2.start_preview(Preview.QT)
+else:
+    picam2.start_preview(Preview.NULL)
 # Exposure time
 if args.exposure is not None:
     print("Exposure time in us:",args.exposure)
@@ -44,7 +47,6 @@ picam2.start()
 
 time.sleep(10)
 r = picam2.switch_mode_capture_request_and_stop(capture_config)
-# r.save("main", "full.jpg")
-
 savestring = "./images/capture" + str(index) + ".dng"
 r.save_dng(savestring)
+time.sleep(2)  # This little sleep seems to prevent QT from getting upset on close
