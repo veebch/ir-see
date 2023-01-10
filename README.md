@@ -47,9 +47,7 @@ python3 main.py -h
 
 ## Post processing 
 
-The 720 nm filter means that there will be some visible red light that leaks into the image. 
-
-- Red/Blue channel swap.
+For basic postprocessing, import the digital negative into your image editor of choice and open the channel mixer. Swap the green and blue channels. Following that, look at a HSL adustment to bring out/shift the little colour you have in the image.
 
 ## Video
 
