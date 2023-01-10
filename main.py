@@ -22,6 +22,7 @@ picam2 = Picamera2()
 camera_config = picam2.create_preview_configuration()
 capture_config = picam2.create_still_configuration(raw={}, display=None)
 picam2.configure(camera_config)
+time.sleep(2)
 picam2.start_preview(Preview.QT)
 # Exposure time
 if args.exposure is not None:
@@ -41,7 +42,7 @@ else:
     picam2.set_controls({"AfMode": controls.AfModeEnum.Auto})
 picam2.start()
 
-time.sleep(2)
+time.sleep(10)
 r = picam2.switch_mode_capture_request_and_stop(capture_config)
 # r.save("main", "full.jpg")
 
