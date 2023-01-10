@@ -35,6 +35,11 @@ if args.exposure is not None:
 if args.iso is not None:
     picam2.set_controls({"AnalogueGain": int(args.iso)/100})
 
+picam2.set_controls({"AfMode": controls.AfModeEnum.Manual, "LensPosition": 0)  
+
+picam2.start()
+
+time.sleep(2)
 # AfMode: Set the AF mode (manual, auto, continuous)
 # LensPosition: Manual focus, Set the lens position.
 # 0 is infinity, 10.0 is 10cm
@@ -43,7 +48,6 @@ if args.focus is not None:
 else:
     print("Autofocus")
     picam2.set_controls({"AfMode": controls.AfModeEnum.Auto})
-picam2.start()
 
 time.sleep(10)
 r = picam2.switch_mode_capture_request_and_stop(capture_config)
