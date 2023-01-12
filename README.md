@@ -59,6 +59,8 @@ In general though, just play with the image until you have something you're happ
 
 ## Video
 
+[![Explainer vid](http://img.youtube.com/vi/uvolslfKxfg/0.jpg)](http://www.youtube.com/watch?v=uvolslfKxfg "Video Title")
+
 ## Acknowledgements
 
 The motivation for dipping a toe into IR photography came from a chat with **bj52** and others on **#photogeeks** on **irc.libera.chat**
