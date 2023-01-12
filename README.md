@@ -63,4 +63,4 @@ In general though, just play with the image until you have something you're happ
 
 ## Acknowledgements
 
-The motivation for dipping a toe into IR photography came from a chat with **bj52** and others on **#photogeeks** on **irc.libera.chat**
+The motivation for dipping a toe into IR photography came from a chat with **bj52** and others on **#photogeeks** on **irc.libera.chat**. 
