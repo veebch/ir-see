@@ -59,6 +59,8 @@ In general though, just play with the image until you have something you're happ
 
 ## Video
 
+A walk-through with a few photos at the end.
+
 [![Explainer video](http://img.youtube.com/vi/uvolslfKxfg/0.jpg)](http://www.youtube.com/watch?v=uvolslfKxfg "Video Title")
 
 ## Acknowledgements
