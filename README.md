@@ -59,7 +59,7 @@ In general though, just play with the image until you have something you're happ
 
 ## Video
 
-[![Explainer vid](http://img.youtube.com/vi/uvolslfKxfg/0.jpg)](http://www.youtube.com/watch?v=uvolslfKxfg "Video Title")
+[![Explainer video](http://img.youtube.com/vi/uvolslfKxfg/0.jpg)](http://www.youtube.com/watch?v=uvolslfKxfg "Video Title")
 
 ## Acknowledgements
 
