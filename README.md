@@ -1,5 +1,5 @@
 
-![Vitra Museum, Germany](/images/vitrasmall.png)
+![Vitra Museum, Germany. 720nm](/images/vitrasmall.png)
 
 [![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCz5BOU9J9pB_O0B8-rDjCWQ?label=YouTube&style=social)](https://www.youtube.com/channel/UCz5BOU9J9pB_O0B8-rDjCWQ)
 
