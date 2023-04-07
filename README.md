@@ -16,7 +16,7 @@ The software is bare-bones. It would be relatively easy to add a preview window 
  
 ## Hardware
 
-- Raspberry Pi                  (Used a 4, but this is overkill)
+- Raspberry Pi                  (Used a Raspberry Pi 4, but this is overkill, a 3 would most likely be fine)
 - Camera Module 3 (NoIR)        (12 Mp Sony IMX708 sensor)
 - 720 nm Filter                 (Blocks out almost all visible light, opt for 850nm if you want no colour at all)
 
