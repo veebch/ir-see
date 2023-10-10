@@ -47,7 +47,7 @@ python3 main.py
 ```
 
 Captures will be stored in the `./images` directory:
-- Stills: 12 Megapixel digital negative (dng) files for post-processing described below
+- Stills: 12 Megapixel digital negative (**dng**) files for post-processing described below
 - Video: mp4 video files in **HD** (1929x1080) resolution
 
 
@@ -63,11 +63,11 @@ For basic postprocessing:
 
 1. Import the digital negative into your image editor of choice and open the channel mixer.
 2. Swap the green and blue channels. 
-3. Following that, look at a HSL (Hue-Saturation-Lightness) adustment to bring out/shift the little colour you have in the image.
+3. Following that, look at a **HSL** (Hue-Saturation-Lightness) adustment to bring out/shift the little colour you have in the image.
 
 In general though, just play with the image until you have something you're happy with.
 
-## Video
+## Videos
 
 A walk-through with a few photos at the end.
 
