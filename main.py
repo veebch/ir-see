@@ -71,7 +71,7 @@ else:
     print("Autofocus")
     picam2.set_controls({"AfMode": controls.AfModeEnum.Auto})
 
-time.sleep(10)
+time.sleep(1)
 r = picam2.switch_mode_capture_request_and_stop(capture_config)
 savestring = "./images/capture" + str(index) + ".dng"
 r.save_dng(savestring)
