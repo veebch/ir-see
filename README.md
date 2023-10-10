@@ -63,7 +63,7 @@ For basic postprocessing:
 
 1. Import the digital negative into your image editor of choice and open the channel mixer.
 2. Swap the green and blue channels. 
-3. Following that, look at a HSL adustment to bring out/shift the little colour you have in the image.
+3. Following that, look at a HSL (Hue-Saturation-Lightness) adustment to bring out/shift the little colour you have in the image.
 
 In general though, just play with the image until you have something you're happy with.
 
