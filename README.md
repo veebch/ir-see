@@ -46,16 +46,17 @@ cd ir-see
 python3 main.py
 ```
 
-Captures will be stored in the `./images` directory.
+Captures will be stored in the `./images` directory:
+- Stills: digital negative (dng) files for post-processing described below
+- Video: mp4 video files in 1080 resolution
+
 
 If you want to manually specify exposure time, focus position or ISO sensitivity, you can get details on those flags using
 
 ```
 python3 main.py -h
 ```
-Running the code will produce files in the images directory: 
-- Stills: digital negative (dng) files for post-processing described below
-- Video: mp4 video files in 1080 resolution
+
 ## Post processing Still Images
 
 For basic postprocessing: 
