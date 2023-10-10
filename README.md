@@ -6,7 +6,7 @@
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/v_e_e_b/)
 
 
-#  IR-See
+#  Night Vision
 
 Infrared (IR) photography and video with a 12 Megapixel Raspberry Pi **NoIR Camera Module 3**. 
 
