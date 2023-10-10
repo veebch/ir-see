@@ -57,7 +57,7 @@ if args.exposure is not None:
 if args.iso is not None:
     picam2.set_controls({"AnalogueGain": int(args.iso)/100})
 
-picam2.set_controls({"AfMode": controls.AfModeEnum.Manual, "LensPosition": 0)  
+picam2.set_controls({"AfMode": controls.AfModeEnum.Manual, "LensPosition": 0})  
 
 picam2.start()
 
