@@ -43,9 +43,10 @@ To run,
 
 ``` 
 cd ir-see
-python3 main.py
+python3 main.py -p 2>/dev/null
 ```
 
+This sends stderr from libcamera to /dev/null rather than stdout, so your screen isn't flooded with diagnostics. 
 Captures will be stored in the `./images` directory:
 - Stills: 12 Megapixel digital negative (**dng**) files for post-processing described below
 - Video: mp4 video files in **HD** (1929x1080) resolution
