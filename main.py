@@ -20,7 +20,6 @@
 
 
 """
-
 from picamera2 import Picamera2, Preview
 from libcamera import controls
 import time
@@ -32,21 +31,25 @@ argParser.add_argument("-e", "--exposure", type=int, help="exposure time (us)")
 argParser.add_argument("-f", "--focus", type=float, help="lens position (0 for infinity, 10 for 10cm)")
 argParser.add_argument("-i", "--iso", type=int, help="iso sensitivity")
 argParser.add_argument("-p", "--preview", help="preview window", action='store_true')
+argParser.add_argument("-v", "--video", help="record a video", action='store_true')
 args = argParser.parse_args()
 
-
-print("args=%s" % args)
-
+# print("args=%s" % args)
+Picamera2.set_logging(Picamera2.DEBUG)
 index = 1
+videoindex =1
 while os.path.exists("./images/capture%s.dng" % index):
     index += 1
+while os.path.exists("./images/video%s.mp4" % videoindex):
+    videoindex += 1
 picam2 = Picamera2()
-camera_config = picam2.create_preview_configuration()
+camera_config = picam2.create_video_configuration(main = {"size": (1920, 1080)})
 capture_config = picam2.create_still_configuration(raw={}, display=None)
+print('Configuration')
 picam2.configure(camera_config)
 time.sleep(2)
 if args.preview is True:
-    picam2.start_preview(Preview.QT)
+    picam2.start_preview(Preview.QTGL)
 else:
     picam2.start_preview(Preview.NULL)
 # Exposure time
@@ -59,6 +62,8 @@ if args.iso is not None:
 
 picam2.set_controls({"AfMode": controls.AfModeEnum.Manual, "LensPosition": 0})  
 
+
+print('Starting Picamera2')
 picam2.start()
 
 time.sleep(2)
@@ -68,11 +73,20 @@ time.sleep(2)
 if args.focus is not None:
     picam2.set_controls({"AfMode": controls.AfModeEnum.Manual, "LensPosition": int(args.focus)})
 else:
-    print("Autofocus")
-    picam2.set_controls({"AfMode": controls.AfModeEnum.Auto})
+    print("No focus distance supplied. Enabling Autofocus.")
+    picam2.set_controls({"AfMode": controls.AfModeEnum.Continuous})
 
 time.sleep(1)
-r = picam2.switch_mode_capture_request_and_stop(capture_config)
-savestring = "./images/capture" + str(index) + ".dng"
-r.save_dng(savestring)
-time.sleep(2)  # This little sleep seems to prevent QT from getting upset on close
+print('Capturing Now')
+# picam2.stop_preview()
+time.sleep(1)
+if args.video is True:
+    print('Capturing video')
+    savestring = "./images/video" + str(videoindex) + ".mp4"
+    picam2.start_and_record_video(savestring, duration=5)
+else:
+    print('Taking a still image')
+    r = picam2.switch_mode_capture_request_and_stop(capture_config)
+    savestring = "./images/capture" + str(index) + ".dng"
+    r.save_dng(savestring)
+print('Saved as '+ savestring)
