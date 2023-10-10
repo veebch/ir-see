@@ -15,17 +15,20 @@ This is intended to be a resource that gives some pointers for easily capturing 
 The script is basic. It would be relatively easy to add a physical preview window to the camera body, but for now, this is plenty. The camera is operated headless and is just intended as a simple proof-of-concept. If you're connecting via SSH don't forget to use X forwarding so that you can see the preview window.
  
 ## Hardware
-### For the Still Photography video
+### For the Still Photography
 - Raspberry Pi 4                (this is probably overkill, a 3 would most likely be fine)
 - Camera Module 3 (NoIR)        (12 Mp Sony IMX708 sensor)
 - 720 nm Filter                 (Blocks out almost all visible light, opt for 850nm if you want no colour at all)
 
-### For the 'all seeing eye' video recorder video
+### For the 'all seeing eye' video recorder
+Since the first video on still photography, we've got our hands on a Raspberry Pi 5. We're using it for a bit of extra speed alongside some infrared lighting for the camera.
+
 - Raspberry Pi 5
 - Camera Module 3 (NoIR)
-- 830nm LEDs (20x 3w)
-- Constant current power supply for the LEDS
+- 830nm LEDs (20x 3w)           (These supply the light that your eyes can't see but the camera can)
+- Constant current power supply (700ma To power the LEDS - Note that we don't use a constant voltage supply) 
 
+The LEDS are wired together in **series** and connected to the power supply. 
 
 ## Installing
 
