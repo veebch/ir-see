@@ -8,7 +8,7 @@
 
 #  IR-See
 
-Infrared (IR) photography with a Raspberry Pi NoIR Camera Module 3. 
+Infrared (IR) photography and video with a 12 Megapixel Raspberry Pi NoIR Camera Module 3. 
 
 This is intended to be a resource that gives some pointers for easily capturing infrared images using a digital sensor, as well as simple ways to post-process them. 
 
