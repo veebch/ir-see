@@ -21,7 +21,7 @@ The script is basic. It would be relatively easy to add a physical preview windo
 - 720 nm Filter                 (Blocks out almost all visible light, opt for 850nm if you want no colour at all)
 
 ### For the 'all seeing eye' video recorder
-Since the first video on still photography, we've got our hands on a Raspberry Pi 5. We're using it for a bit of extra speed alongside some infrared lighting for the camera.
+Since the first video on still photography, we've got our hands on a Raspberry Pi 5. There is a large bump in terms of CPU speed and IO performance between the 4 and the 5l, we we're using the fastest one we've got.
 
 - Raspberry Pi 5
 - Camera Module 3 (NoIR)
