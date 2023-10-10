@@ -54,7 +54,7 @@ If you want to manually specify exposure time, focus position or ISO sensitivity
 python3 main.py -h
 ```
 
-## Post processing 
+## Post processing Still Images
 
 For basic postprocessing: 
 
