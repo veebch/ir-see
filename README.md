@@ -15,15 +15,17 @@ This is intended to be a resource that gives some pointers for easily capturing 
 The software is bare-bones. It would be relatively easy to add a preview window to the body, but for now, this is plenty. The camera is operated headless and is just intended as a simple proof-of-concept. Make sure you use SSH with X forwarding so that you can see the preview window.
  
 ## Hardware
-### For the Photography video
-- Raspberry Pi                  (Used a Raspberry Pi 4, but this is overkill, a 3 would most likely be fine)
+### For the Still Photography video
+- Raspberry Pi 4                (this is probably overkill, a 3 would most likely be fine)
 - Camera Module 3 (NoIR)        (12 Mp Sony IMX708 sensor)
 - 720 nm Filter                 (Blocks out almost all visible light, opt for 850nm if you want no colour at all)
 
-### For the 'all seeing eye' video
+### For the 'all seeing eye' video recorder video
+- Raspberry Pi 5
+- Camera Module 3 (NoIR)
 - 830nm LEDs (20x 3w)
 - Constant current power supply for the LEDS
-- Raspberry Pi 5
+
 
 ## Installing
 
