@@ -84,7 +84,7 @@ def photos():
     time.sleep(1)
     if args.video is True:
         print('Capturing video')
-        savestring = "./images/video" + str(videoindex) + ".mp4 "
+        savestring = "./images/video" + str(videoindex) + ".mp4"
         picam2.start_and_record_video(savestring, duration=10)  
     else:
         print('Taking a still image')
