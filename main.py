@@ -27,7 +27,7 @@ import os
 import argparse
 import sys
 
-sys.stderrr = open('errout.txt', 'w')
+sys.stderr = open('errout.txt', 'w')
 
 argParser = argparse.ArgumentParser()
 argParser.add_argument("-e", "--exposure", type=int, help="exposure time (us)")
