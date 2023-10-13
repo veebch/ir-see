@@ -12,7 +12,7 @@ How to do Infrared (**IR**) photography and video with a 12 Megapixel Raspberry 
 
 This was originally a resource that gives some pointers for easily capturing still infrared images using a digital sensor, as well as a guide to post-process the images. Since then we've added a video capability. Invariably, people will ignore all the still image bits in favour of making a nightvision camera (which is pretty cool tbf).
 
-It would be relatively easy to refine this by adding add a physical preview window to the camera body, or turning it into a wearable set of night vision goggles etc. If you're connecting to the Raspberry Pi via SSH don't forget to use X forwarding if you want to see the preview window.
+It would be relatively easy to refine this by adding add a physical preview window to the camera body, or to turn it into a wearable set of night vision goggles etc. 
  
 ## Hardware
 ### For the Still Photography
@@ -42,6 +42,8 @@ git clone https://github.com/veebch/ir-see
 
 
 ## Running
+
+If you're connecting to the Raspberry Pi via SSH don't forget to use X forwarding if you want to see the preview window.
 
 To run, 
 
