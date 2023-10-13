@@ -58,7 +58,7 @@ Captures will be stored in the `./images` directory:
 If you want to manually specify exposure time, focus position or ISO sensitivity, you can get details on those flags using
 
 ```
-python3 main.py -h
+python3 photo.py -h
 ```
 
 ## Post processing Still Images
