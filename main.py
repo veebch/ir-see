@@ -29,10 +29,10 @@ import argparse
 def photos():
     argParser = argparse.ArgumentParser()
     argParser.add_argument("-e", "--exposure", type=int, help="exposure time (microseconds)")
-    argParser.add_argument("-f", "--focus", type=float, help="lens position (0 for infinity, 10 for 10cm)")
+    argParser.add_argument("-f", "--focus", type=float, help="lens position (FOCUS =0 for infinity, 10 for 10cm)")
     argParser.add_argument("-i", "--iso", type=int, help="iso sensitivity")
     argParser.add_argument("-p", "--preview", help="preview window", action='store_true')
-    argParser.add_argument("-v", "--video", type=float, help="record a video for <argument> seconds")
+    argParser.add_argument("-v", "--video", type=float, help="record a video for VIDEO seconds")
     args = argParser.parse_args()
 
 
