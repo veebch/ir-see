@@ -85,12 +85,9 @@ def photos():
     time.sleep(1)
     if args.video is True:
         print('Capturing video')
-        encoder = H264Encoder(bitrate=1000000)
+        encoder = H264Encoder(bitrate=10000000)
         savestring = "./images/video" + str(videoindex) + ".h264"
-        # picam2.start_and_record_video(savestring, duration=5)
-        picam2.start_recording(encoder, savestring)
-        time.sleep(10)
-        picam2.stop_recording()
+        picam2.start_and_record_video(savestring, duration=10)  
     else:
         print('Taking a still image')
         r = picam2.switch_mode_capture_request_and_stop(capture_config)
