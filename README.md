@@ -16,7 +16,7 @@ The script is basic. It would be relatively easy to add a physical preview windo
  
 ## Hardware
 ### For the Still Photography
-- Raspberry Pi 4                (a 3 would be fine)
+- Raspberry Pi 4                (a Raspberry Pi 3 would be fine)
 - Camera Module 3 (NoIR)        (12 Mp Sony IMX708 sensor)
 - 720 nm Filter                 (Blocks out almost all visible light, opt for 850nm if you want no colour at all)
 
