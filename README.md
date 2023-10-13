@@ -46,9 +46,10 @@ To run,
 
 ``` 
 cd ir-see
-python3 main.py -p 
+python3 main.py -p 2>'log.txt'
 ```
 
+This runs the code and sends the stderr to a file called 'log.txt' (for debugging purposes). 
 Captures will be stored in the `./images` directory:
 - Stills: 12 Megapixel digital negative (**dng**) files for post-processing described below
 - Video: mp4 video files in **HD** (1929x1080) resolution
