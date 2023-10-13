@@ -84,7 +84,7 @@ def photos():
     time.sleep(1)
     if args.video is True:
         videoduration = 10  
-        print('Capturing video for '+ videoduration +' seconds')
+        print('Capturing video for '+ str(videoduration) +' seconds')
         savestring = "./images/video" + str(videoindex) + ".mp4"
         picam2.start_and_record_video(savestring, duration=10)  
     else:
