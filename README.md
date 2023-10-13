@@ -8,7 +8,7 @@
 
 #  Night Vision
 
-Infrared (**IR**) photography and video with a 12 Megapixel Raspberry Pi **NoIR Camera Module 3**. 
+How to do Infrared (**IR**) photography and video with a 12 Megapixel Raspberry Pi **NoIR Camera Module 3**. 
 
 This is intended to be a resource that gives some pointers for easily capturing infrared images using a digital sensor, as well as simple ways to post-process the still images. Invariably, people will ignore all that stuff in favour of making a nightvision camera.
 
@@ -21,7 +21,7 @@ The script is basic. It would be relatively easy to add a physical preview windo
 - 720 nm Filter                 (Blocks out almost all visible light, opt for 850nm if you want no colour at all)
 
 ### For the 'all seeing eye' video recorder
-Since we made the video on still IR photography, we've got our hands on a Raspberry Pi 5. There is a large bump in terms of CPU speed and IO performance between the 4 and the 5 so we we're using the fastest one we've got. We're also using some simple IR LEDs. These are external to the Pi, but would be easy to integrate by using a relay switch.
+Since making the video on still IR photography, we've got our hands on a Raspberry Pi 5. There is a large bump in terms of CPU speed and IO performance between the 4 and the 5 so we're using the fastest Pi that we've got. We're also using some simple 830nm LEDs and a constant-current power supply. These are external to the Pi, but would be easy to integrate by using a relay switch.
 
 - Raspberry Pi 5
 - Camera Module 3 (NoIR)
