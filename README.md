@@ -74,7 +74,7 @@ Adjust the image until you have something you're happy with.
 
 ## Videos
 
-Some very light theory, with a few photos at the end:
+Some very light (pun intended) theory, with a few photos at the end:
 
 [![Explainer video](http://img.youtube.com/vi/uvolslfKxfg/0.jpg)](http://www.youtube.com/watch?v=uvolslfKxfg "Video Title")
 
