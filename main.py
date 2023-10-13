@@ -48,7 +48,7 @@ def photos():
     camera_config = picam2.create_video_configuration(main = {"size": (1920, 1080)})
     capture_config = picam2.create_still_configuration(raw={}, display=None)
     print('Configuration')
-    picam2.configure(camera_config)
+    dummy = picam2.configure(camera_config)
     time.sleep(2)
     if args.preview is True:
         picam2.start_preview(Preview.QTGL)
