@@ -56,7 +56,7 @@ Captures will be stored in the `./images` directory:
 - Video: mp4 video files in **HD** (1920x1080) resolution
 
 
-If you want to manually specify exposure time, focus position or ISO sensitivity, you can get details on those flags using
+If you want to manually specify video mode, exposure time, focus position or ISO sensitivity, you can get details on those arguments using the command:
 
 ```
 python3 photo.py -h
