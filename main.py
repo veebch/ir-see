@@ -21,7 +21,6 @@
 
 """
 from picamera2 import Picamera2, Preview
-from picamera2.encoders import H264Encoder
 from libcamera import controls
 import time
 import os
@@ -85,8 +84,7 @@ def photos():
     time.sleep(1)
     if args.video is True:
         print('Capturing video')
-        encoder = H264Encoder(bitrate=10000000)
-        savestring = "./images/video" + str(videoindex) + ".h264"
+        savestring = "./images/video" + str(videoindex) + ".mp4 "
         picam2.start_and_record_video(savestring, duration=10)  
     else:
         print('Taking a still image')
