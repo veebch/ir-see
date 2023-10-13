@@ -26,10 +26,8 @@ from libcamera import controls
 import time
 import os
 import argparse
-from contextlib import redirect_stderr
 
-with open('filename.log', 'w') as stderr, redirect_stderr(stderr):
-
+def photos():
     argParser = argparse.ArgumentParser()
     argParser.add_argument("-e", "--exposure", type=int, help="exposure time (us)")
     argParser.add_argument("-f", "--focus", type=float, help="lens position (0 for infinity, 10 for 10cm)")
@@ -99,3 +97,6 @@ with open('filename.log', 'w') as stderr, redirect_stderr(stderr):
         savestring = "./images/capture" + str(index) + ".dng"
         r.save_dng(savestring)
     print('Saved as '+ savestring)
+
+if __name__ == "__main__":
+    photos()
