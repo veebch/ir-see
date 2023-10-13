@@ -32,7 +32,7 @@ def photos():
     argParser.add_argument("-f", "--focus", type=float, help="lens position (0 for infinity, 10 for 10cm)")
     argParser.add_argument("-i", "--iso", type=int, help="iso sensitivity")
     argParser.add_argument("-p", "--preview", help="preview window", action='store_true')
-    argParser.add_argument("-v", "--video", help="record a video", action='store_true')
+    argParser.add_argument("-v", "--video", type=float, help="record a video for <argument> seconds")
     args = argParser.parse_args()
 
 
@@ -82,8 +82,8 @@ def photos():
     print('Capturing Now')
     # picam2.stop_preview()
     time.sleep(1)
-    if args.video is True:
-        videoduration = 10  
+    if args.video is not None:
+        videoduration = args.video
         print('Capturing video for '+ str(videoduration) +' seconds')
         savestring = "./images/video" + str(videoindex) + ".mp4"
         picam2.start_and_record_video(savestring, duration=10)  
