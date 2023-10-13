@@ -46,7 +46,7 @@ To run,
 
 ``` 
 cd ir-see
-python3 main.py -p 2>'log.txt'
+python3 photo.py -p 2>'log.txt'
 ```
 
 This runs the code with a preview window and sends the stderr to a file called 'log.txt' (for debugging purposes). 
