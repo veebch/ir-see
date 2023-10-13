@@ -26,75 +26,76 @@ from libcamera import controls
 import time
 import os
 import argparse
-import sys
+from contextlib import redirect_stderr
 
-sys.stderr = open('errout.txt', 'w')
+with open('filename.log', 'w') as stderr, redirect_stderr(stderr):
 
-argParser = argparse.ArgumentParser()
-argParser.add_argument("-e", "--exposure", type=int, help="exposure time (us)")
-argParser.add_argument("-f", "--focus", type=float, help="lens position (0 for infinity, 10 for 10cm)")
-argParser.add_argument("-i", "--iso", type=int, help="iso sensitivity")
-argParser.add_argument("-p", "--preview", help="preview window", action='store_true')
-argParser.add_argument("-v", "--video", help="record a video", action='store_true')
-args = argParser.parse_args()
-
-# print("args=%s" % args)
-Picamera2.set_logging(Picamera2.DEBUG)
-index = 1
-videoindex =1
-while os.path.exists("./images/capture%s.dng" % index):
-    index += 1
-while os.path.exists("./images/video%s.mp4" % videoindex):
-    videoindex += 1
-picam2 = Picamera2()
-camera_config = picam2.create_video_configuration(main = {"size": (1920, 1080)})
-capture_config = picam2.create_still_configuration(raw={}, display=None)
-print('Configuration')
-picam2.configure(camera_config)
-time.sleep(2)
-if args.preview is True:
-    picam2.start_preview(Preview.QTGL)
-else:
-    picam2.start_preview(Preview.NULL)
-# Exposure time
-if args.exposure is not None:
-    print("Exposure time in us:",args.exposure)
-    picam2.set_controls({"ExposureTime": int(args.exposure)})
-
-if args.iso is not None:
-    picam2.set_controls({"AnalogueGain": int(args.iso)/100})
-
-picam2.set_controls({"AfMode": controls.AfModeEnum.Manual, "LensPosition": 0})  
+    argParser = argparse.ArgumentParser()
+    argParser.add_argument("-e", "--exposure", type=int, help="exposure time (us)")
+    argParser.add_argument("-f", "--focus", type=float, help="lens position (0 for infinity, 10 for 10cm)")
+    argParser.add_argument("-i", "--iso", type=int, help="iso sensitivity")
+    argParser.add_argument("-p", "--preview", help="preview window", action='store_true')
+    argParser.add_argument("-v", "--video", help="record a video", action='store_true')
+    args = argParser.parse_args()
 
 
-print('Starting Picamera2')
-picam2.start()
+    # print("args=%s" % args)
+    Picamera2.set_logging(Picamera2.DEBUG)
+    index = 1
+    videoindex =1
+    while os.path.exists("./images/capture%s.dng" % index):
+        index += 1
+    while os.path.exists("./images/video%s.mp4" % videoindex):
+        videoindex += 1
+    picam2 = Picamera2()
+    camera_config = picam2.create_video_configuration(main = {"size": (1920, 1080)})
+    capture_config = picam2.create_still_configuration(raw={}, display=None)
+    print('Configuration')
+    picam2.configure(camera_config)
+    time.sleep(2)
+    if args.preview is True:
+        picam2.start_preview(Preview.QTGL)
+    else:
+        picam2.start_preview(Preview.NULL)
+    # Exposure time
+    if args.exposure is not None:
+        print("Exposure time in us:",args.exposure)
+        picam2.set_controls({"ExposureTime": int(args.exposure)})
 
-time.sleep(2)
-# AfMode: Set the AF mode (manual, auto, continuous)
-# LensPosition: Manual focus, Set the lens position.
-# 0 is infinity, 10.0 is 10cm
-if args.focus is not None:
-    picam2.set_controls({"AfMode": controls.AfModeEnum.Manual, "LensPosition": int(args.focus)})
-else:
-    print("No focus distance supplied. Enabling Autofocus.")
-    picam2.set_controls({"AfMode": controls.AfModeEnum.Continuous})
+    if args.iso is not None:
+        picam2.set_controls({"AnalogueGain": int(args.iso)/100})
 
-time.sleep(1)
-print('Capturing Now')
-# picam2.stop_preview()
-time.sleep(1)
-if args.video is True:
-    print('Capturing video')
-    encoder = H264Encoder(10000000)
-    savestring = "./images/video" + str(videoindex) + ".h264"
-    # picam2.start_and_record_video(savestring, duration=5)
-    picam2.start_recording(encoder, savestring)
-    time.sleep(10)
-    picam2.stop_recording()
-else:
-    print('Taking a still image')
-    r = picam2.switch_mode_capture_request_and_stop(capture_config)
-    savestring = "./images/capture" + str(index) + ".dng"
-    r.save_dng(savestring)
-print('Saved as '+ savestring)
+    picam2.set_controls({"AfMode": controls.AfModeEnum.Manual, "LensPosition": 0})  
+
+
+    print('Starting Picamera2')
+    picam2.start()
+
+    time.sleep(2)
+    # AfMode: Set the AF mode (manual, auto, continuous)
+    # LensPosition: Manual focus, Set the lens position.
+    # 0 is infinity, 10.0 is 10cm
+    if args.focus is not None:
+        picam2.set_controls({"AfMode": controls.AfModeEnum.Manual, "LensPosition": int(args.focus)})
+    else:
+        print("No focus distance supplied. Enabling Autofocus.")
+        picam2.set_controls({"AfMode": controls.AfModeEnum.Continuous})
+
+    time.sleep(1)
+    print('Capturing Now')
+    # picam2.stop_preview()
+    time.sleep(1)
+    if args.video is True:
+        print('Capturing video')
+        encoder = H264Encoder(10000000)
+        savestring = "./images/video" + str(videoindex) + ".h264"
+        # picam2.start_and_record_video(savestring, duration=5)
+        picam2.start_recording(encoder, savestring)
+        time.sleep(10)
+        picam2.stop_recording()
+    else:
+        print('Taking a still image')
+        r = picam2.switch_mode_capture_request_and_stop(capture_config)
+        savestring = "./images/capture" + str(index) + ".dng"
+        r.save_dng(savestring)
+    print('Saved as '+ savestring)
