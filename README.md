@@ -10,7 +10,7 @@
 
 How to do Infrared (**IR**) photography and video with a 12 Megapixel Raspberry Pi **NoIR Camera Module 3**. 
 
-This is intended to be a resource that gives some pointers for easily capturing infrared images using a digital sensor, as well as simple ways to post-process the still images. Invariably, people will ignore all that stuff in favour of making a nightvision camera.
+This was originally intended to be a resource that gives some pointers for easily capturing infrared images using a digital sensor, as well as simple ways to post-process the still images. Since then we've added a video capability. Invariably, people will ignore all the still image bits in favour of making a nightvision camera (which is pretty cool tbf).
 
 It would be relatively easy to refine this by adding add a physical preview window to the camera body, turning it into a wearable set of night vision goggles etc. If you're connecting to the Raspberry Pi via SSH don't forget to use X forwarding if you want to see the preview window.
  
