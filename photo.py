@@ -22,6 +22,7 @@
 :"""
 from picamera2 import Picamera2, Preview
 from libcamera import controls
+import keyboard
 import time
 import os
 import argparse
@@ -79,9 +80,12 @@ def photos():
         picam2.set_controls({"AfMode": controls.AfModeEnum.Continuous})
 
     time.sleep(1)
-    print('Capturing Now')
-    # picam2.stop_preview()
-    time.sleep(1)
+    print('Ready to Capture, press SPACE to trigger')
+    while True:
+        keyboard.read_key()
+        if keyboard.is_pressed('space'):
+            print('Shutter Noise')
+            break
     if args.video is not None:
         videoduration = args.video
         print('Capturing video for '+ str(videoduration) +' seconds')
