@@ -1,3 +1,3 @@
 ## 3d Print Files
 
-The stl files for the tripod mount      
+The STL files for the tripod mount      
