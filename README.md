@@ -15,7 +15,7 @@ This was originally a resource that gives some pointers for easily capturing inf
 ## Hardware
 ### For making a Still-Photography Camera
 - Raspberry Pi 4                (a Raspberry Pi 3 would be fine)
-- Camera Module 3 (NoIR)        (12 Mp Sony IMX708 sensor)
+- Camera Module 3 (NoIR)        (12 Megapixel Sony IMX708 sensor)
 - 720 nm Filter                 (Blocks out almost all visible light, opt for 850nm if you want no colour at all)
 
 ### For making an 'All Seeing Eye' Video Camera
