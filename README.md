@@ -63,7 +63,7 @@ If you want to manually specify video mode, exposure time, focus position or ISO
 python3 photo.py -h
 ```
 
-## Post processing Still Images
+## Post-Processing Still Images
 
 For basic postprocessing: 
 
