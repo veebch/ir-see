@@ -41,8 +41,6 @@ git clone https://github.com/veebch/ir-see
 
 ## Running
 
-If you're connecting to the Raspberry Pi via SSH don't forget to use X forwarding if you want to see the preview window.
-
 To run, 
 
 ``` 
