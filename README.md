@@ -73,7 +73,7 @@ For basic postprocessing:
 
 Adjust the image until you have something you're happy with.
 
-## Videos
+## Overview Videos
 
 Some light (pun intended) theory, with a few photos at the end:
 
