@@ -13,12 +13,12 @@ How to make Infrared (**IR**) photos and video with a 12 Megapixel Raspberry Pi 
 This was originally a resource that gives some pointers for easily capturing still infrared images using a digital sensor, as well as a guide to post-process the images. Since then we've added a video capability. Invariably, people will ignore all the still image bits in favour of making a nightvision camera (which is pretty cool tbf).
  
 ## Hardware
-### For the Still Photography
+### For making a Still-Photography Camera
 - Raspberry Pi 4                (a Raspberry Pi 3 would be fine)
 - Camera Module 3 (NoIR)        (12 Mp Sony IMX708 sensor)
 - 720 nm Filter                 (Blocks out almost all visible light, opt for 850nm if you want no colour at all)
 
-### For the 'all seeing eye' video recorder
+### For making an 'all seeing eye' video recorder
 Since making the video on still IR photography, we've got our hands on a Raspberry Pi 5. There is a large bump in terms of CPU speed and IO performance between the 4 and the 5 so we're using the fastest Pi that we've got. We're also using some simple 830nm LEDs and a constant-current power supply. These are external to the Pi, but would be easy to integrate by using a relay switch.
 
 - [Raspberry Pi 5](https://youtu.be/M8JPFpz80mY)
