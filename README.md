@@ -6,7 +6,7 @@
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/v_e_e_b/)
 
 
-#  Night Vision
+#  Night Vision - More than your eye can see
 
 How to make Infrared (**IR**) photos and video with a 12 Megapixel Raspberry Pi **NoIR Camera Module 3**. Adding an IR light source makes this into a night vision camera.
 
