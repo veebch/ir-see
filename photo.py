@@ -79,8 +79,8 @@ def photos():
         picam2.set_controls({"AfMode": controls.AfModeEnum.Continuous})
 
     time.sleep(1)
-    print('Ready to Capture')
-    input("Press Enter to trigger...")
+    print('Ready to Capture, press ENTER to trigger')
+    input()
     if args.video is not None:
         videoduration = args.video
         print('Capturing video for '+ str(videoduration) +' seconds')
