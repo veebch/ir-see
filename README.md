@@ -81,4 +81,4 @@ Some light (pun intended) theory, with a few photos at the end:
 
 - The motivation for dipping a toe into IR photography came from a chat with **bj52** and others on **#photogeeks** on **irc.libera.chat**
 - There's lots more info on using picamera2 [here](https://datasheets.raspberrypi.com/camera/picamera2-manual.pdf)
-- For a more elaborate camera control code that uses libcamera and provides a GUI, try [this](https://github.com/Gordon999/Pi_LIbCamera_GUI) 
+- For a more elaborate camera control code that uses libcamera, controls a range of cameras and provides a GUI, try [this](https://github.com/Gordon999/Pi_LIbCamera_GUI) 
