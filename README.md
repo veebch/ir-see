@@ -41,7 +41,7 @@ git clone https://github.com/veebch/ir-see
 
 ## Running
 
-To run, 
+To run, use the following commands:
 
 ``` 
 cd ir-see
