@@ -8,7 +8,7 @@
 
 #  Night Sight - More than your eye can see
 
-How to make Infrared (**IR**) photos and video with a 12 Megapixel Raspberry Pi **NoIR Camera Module 3**. Adding an IR light source makes this into a night vision camera.
+How to make Infrared (**IR**) photos and video with a 12 Megapixel Raspberry Pi **Camera Module 3 (NoIR)**. Adding an IR light source makes this into a night vision camera.
 
 This was originally a resource that gives some pointers for easily capturing infrared images using a digital sensor, as well as a guide to post-process the images. Since then we've added a **video** capability. Invariably, people will ignore all the still image bits in favour of making a nightvision camera (which is pretty cool tbf).
  
