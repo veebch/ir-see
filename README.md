@@ -79,6 +79,8 @@ Some light (pun intended) theory, with a few photos at the end:
 
 Infrared Video:
 
+<Insert video>
+
 ## Misc
 
 - The motivation for dipping a toe into IR photography came from a chat with **bj52** and others on **#photogeeks** on **irc.libera.chat**
