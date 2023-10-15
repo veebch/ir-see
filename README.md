@@ -79,7 +79,7 @@ Some light (pun intended) theory, with a few photos at the end:
 
 Infrared Video:
 
-<Insert video>
+TODO: link to video
 
 ## Misc
 
