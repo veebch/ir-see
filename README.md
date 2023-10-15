@@ -24,7 +24,7 @@ Since making the video on still IR photography, we've got our hands on a Raspber
 - [Raspberry Pi 5](https://youtu.be/M8JPFpz80mY)
 - Camera Module 3 (NoIR)
 - 830nm LEDs (20x 3w)           (These supply the light that your eyes can't see but the camera can)
-- Constant current power supply (700ma To power the LEDS - Note that we don't use a constant voltage supply)
+- **Constant current** power supply (700ma To power the LEDS - Note that we don't use a constant voltage supply)
 - 3d-printed all-seeing-eye tripod (files are in the [3d](./3d) directory)
 
 The LEDS are wired together in **series** and connected to the power supply. 
