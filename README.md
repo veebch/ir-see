@@ -8,7 +8,7 @@
 
 #  Night Sight - More than your eye can see
 
-How to make Infrared (**IR**) photos and video with a 12 Megapixel Raspberry Pi **Camera Module 3 (NoIR)**. Adding an IR light source and a using a **Raspberry Pi 5** makes this into a **'HD night vision'** camera. It is possible to get 4K video from the camera, but currently the frame rate is slow. This might change once picamera can take advantage of the 4 lane camera connection.
+How to make Infrared (**IR**) photos and video with a 12 Megapixel Raspberry Pi **Camera Module 3 (NoIR)**. Adding an IR light source and a using a **Raspberry Pi 5** makes this into a **'HD night vision'** camera. It is possible to get 4K video from the camera, but currently the frame rate is slow. This might change once picamera2 can take advantage of the 4 lane camera data connection.
 
 This was originally a resource that gives some pointers for easily capturing infrared images using a digital sensor, as well as a guide to post-process the images. Since then we've added a **video** capability. Invariably, people will ignore all the still image bits in favour of making a night vision video camera (which is pretty cool tbf).
  
