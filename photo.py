@@ -45,7 +45,7 @@ def photos():
     while os.path.exists("./images/video%s.mp4" % videoindex):
         videoindex += 1
     picam2 = Picamera2()
-    camera_config = picam2.create_video_configuration(main = {"size": (3840, 2160)})
+    camera_config = picam2.create_video_configuration(main = {"size": (1920, 1080)})
     capture_config = picam2.create_still_configuration(raw={}, display=None)
     print('Configuration')
     picam2.configure(camera_config)
