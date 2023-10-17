@@ -19,7 +19,7 @@ This was originally a resource that gives some pointers for easily capturing inf
 - 720 nm Filter                 (Blocks out almost all visible light, opt for 850nm if you want no colour at all)
 
 ### For making an 'All Seeing Eye' Video Camera
-Since making the video on still IR photography, we've got our hands on a Raspberry Pi 5. There is a large bump in terms of CPU speed and IO performance between the 4 and the 5 so we're using the fastest Pi that we've got in order to get video from the camera (although this Camera can only use 2 of the 4 data lanes). We're also using some simple 830nm LEDs and a constant-current power supply. These are external to the Pi, but would be easy to integrate by using a relay switch.
+Since making the video on still IR photography, we've got our hands on a Raspberry Pi 5. There is a large bump in terms of CPU speed and IO performance between the 4 and the 5 so we're using the fastest Pi that we've got in order to get video from the camera (although this camera can only use 2 of the 4 data lanes). We're also using some simple 830nm LEDs and a constant-current power supply. These are external to the Pi, but would be easy to integrate by using a relay switch.
 
 - [Raspberry Pi 5](https://youtu.be/M8JPFpz80mY)
 - Camera Module 3 (NoIR)
