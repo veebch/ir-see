@@ -22,7 +22,7 @@ This was originally a resource that gives some pointers for easily capturing inf
 Since making the video on still IR photography, we've got our hands on a Raspberry Pi 5. There is a large bump in terms of CPU speed and IO performance between the 4 and the 5 so we're using the fastest Pi that we've got in order to get video from the camera (*although this camera's PCB means you can only use **2** of the **4** CSI data lanes*). We're also using some simple 830nm LEDs and a constant-current power supply. These are external to the Pi, but would be easy to integrate by using a relay switch.
 
 - [Raspberry Pi 5](https://youtu.be/M8JPFpz80mY) 
-- Camera Module 3 (NoIR)        (and a 22 pin camera cable if you're using the Pi Zero or 5)
+- Camera Module 3 (NoIR)        (and a 22 pin camera cable if you're using the Pi Zero or Pi 5)
 - 830nm LEDs (20x 3w)           (These supply the light that your eyes can't see but the camera can)
 - **Constant current** power supply (700ma To power the LEDS - Note that we don't use a constant voltage supply)
 - 3d-printed all-seeing-eye tripod (files are in the [3d](./3d) directory)
