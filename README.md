@@ -31,8 +31,6 @@ Since making the video on still IR photography, we've got our hands on a Raspber
 
 The LEDS are wired together in **series** and connected to the power supply. 
 
-* The 22 pin cable can do 4 data lanes, as can the sensor
-
 ## Installing
 
 Clone this repository and install dependencies using the commands
