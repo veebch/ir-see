@@ -87,4 +87,5 @@ TODO: link to video
 
 - The motivation for dipping a toe into IR photography came from a chat with **bj52** and others on **#photogeeks** on **irc.libera.chat**
 - There's lots more info on using picamera2 the official documentation is [here](https://datasheets.raspberrypi.com/camera/picamera2-manual.pdf)
-- For a more elaborate camera control code that uses libcamera, controls a broad range of cameras and provides a GUI, try [this](https://github.com/Gordon999/Pi_LIbCamera_GUI) 
+- For a more elaborate camera control code that uses libcamera, controls a broad range of cameras and provides a GUI, try [this](https://github.com/Gordon999/Pi_LIbCamera_GUI)
+- 'More than your eye can see' is the title of a [NASA video](https://www.jpl.nasa.gov/videos/infrared-more-than-your-eyes-can-see)
