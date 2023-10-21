@@ -81,7 +81,7 @@ Some light (pun intended) theory, with a few photos at the end:
 
 Infrared Video:
 
-TODO: link to video
+[![Night Sight video](http://img.youtube.com/vi/fQ7X9IXTTHo/0.jpg)](http://www.youtube.com/watch?v=fQ7X9IXTTHo "Video Title")
 
 ## Misc
 
