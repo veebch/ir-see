@@ -6,7 +6,7 @@
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/v_e_e_b/)
 
 
-#  Night Sight - More than your eye can see
+#  Night Sight - More than your eyes can see
 
 How to make Infrared (**IR**) photos and video with a 12 Megapixel Raspberry Pi **Camera Module 3 (NoIR)**. Adding an IR light source makes this into a **'HD night vision'** camera. It is possible to get 4K video from the camera, but the frame rate is slow. 
 
@@ -88,4 +88,4 @@ Infrared Video:
 - The motivation for dipping a toe into IR photography came from a chat with **bj52** and others on **#photogeeks** on **irc.libera.chat**
 - There's lots more info on using picamera2 the official documentation is [here](https://datasheets.raspberrypi.com/camera/picamera2-manual.pdf)
 - For a more elaborate camera control code that uses libcamera, controls a broad range of cameras and provides a GUI, try [this](https://github.com/Gordon999/Pi_LIbCamera_GUI)
-- 'More than your eye can see' is the title of a [NASA video](https://www.jpl.nasa.gov/videos/infrared-more-than-your-eyes-can-see)
+- 'More than your eyes can see' is the title of a [NASA video](https://www.jpl.nasa.gov/videos/infrared-more-than-your-eyes-can-see)
