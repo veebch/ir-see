@@ -73,13 +73,15 @@ For basic postprocessing:
 
 Adjust the image until you have something you're happy with.
 
-## Overview Videos
+## Videos
 
-Some light (pun intended) theory, with a few photos at the end:
+Some light theory, with a few photos at the end:
+
+### Photos
 
 [![Explainer video](http://img.youtube.com/vi/uvolslfKxfg/0.jpg)](http://www.youtube.com/watch?v=uvolslfKxfg "Video Title")
 
-Infrared Video:
+### Infrared Video
 
 [![Night Sight video](http://img.youtube.com/vi/fQ7X9IXTTHo/0.jpg)](http://www.youtube.com/watch?v=fQ7X9IXTTHo "Video Title")
 
